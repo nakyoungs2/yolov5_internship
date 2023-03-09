@@ -1,2 +1,3 @@
-https://github.com/ultralytics/yolov5.git  
-해당 내용을 참조하여 기록하였습니다.
+--data : yaml 파일의 경로 넣기  
+--img : 이미지의 사이즈  
+--project : 결
