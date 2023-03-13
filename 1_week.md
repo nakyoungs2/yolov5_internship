@@ -21,7 +21,7 @@
 5. F1-score
 6. ROC-AUC  
 ***
-3. 정밀도 (Precision)  
+3. 정밀도 (Precision)   
 정밀도는 '양성으로 판단한 것 중, 진짜 양성의 비율'이다.
 ```
 정밀도 = TP / TP + FP   
