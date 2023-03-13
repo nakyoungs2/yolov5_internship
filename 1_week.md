@@ -45,4 +45,8 @@
 합성곱 신경망 (Convolutional Neural Network CNN)의 모델 성능 평가는 대체로 mAP를 이용하여 평가한다.  
 mAP를 이해하기 위해서는 먼저 IoU와 AP에 대해 이해해야 한다.  
 
-3.1. IoU (Intersect over Union)
+3.1. IoU (Intersect over Union)  
+객체 탐지 모델에서 "물체를 옳게 검출했다.", "물체가 옳게 검출되지 않았다."를 구분하는 기준을 의미한다.  
+사용자가 인물의 위치에 적용한 바운더리 박스와 바운더리 박스가 주어지지 않은 상황에서 어떤 모델이 예측한 바운더리 박스라고 가정해보자.  
+이때 모델이 설정한 바운더리 박스가 맞는지 틀린 지를 결정하기 위해서 나온 것이 IoU이다.  
+![image](https://user-images.githubusercontent.com/120306359/224624163-6fc94510-1c0f-429b-a7cf-2a18dd6b9803.png)
