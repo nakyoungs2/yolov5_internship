@@ -54,4 +54,6 @@ IoU는 다음 그림과 같이 구할 수 있다. 예측된 바운더리 박스�
 보통 결과 값이 0.5이상이면 제대로 검출(TF)되었다고 판단한다. 만약 0.5미만이면 잘못 검출(FP)되었다고 판단한다. (이 값은 임의의 값으로 설정할 수 있다.)  
 
 3.2. Precision-recall 곡선  
-Precision-recall 곡선(PR 곡선)은 물체를 검출하는 알고리즘의 성능을 평가하는 방법 중 하나로 confidence 레벨에 대한 threshold 값의 변화에 따라 precision과 recall 값들도 달라진다.
+Precision-recall 곡선(PR 곡선)은 물체를 검출하는 알고리즘의 성능을 평가하는 방법 중 하나로 confidence 레벨에 대한 threshold 값의 변화에 따라 precision과 recall 값들도 달라진다.  
+confidence는 검출한 것에 대해 모델이 얼마나 정확하다고 생각하는 지 알려주는 값이다. 만약 어떤 물체를 검출했을 때 confidence 레벨이 0.99라면 모델은 그 물체가 검출해야 하는 물체와 거의 똑같다고 생각하는 것과 같다. 하지만 confidence 레벨이 높다고 해서 무조건 정확한 것은 아니다. 모델이 그저 학습한 것에 따른 정확도를 나타내는 것이다.  
+사용자는 보통 confidence 레벨에 대해 threshold 값을 부여하여 특정 값 이상이 되어야 검출된 것으로 인정한다. 따라서 threshold 값의 변화에 따라 precision과 recall의 값들도 달라질 것이다. 이것을 그래프로 나타낸 것이 바로 PR 곡선이다.  
