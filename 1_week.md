@@ -64,9 +64,10 @@ PR 그래프는 어떤 모델의 성능을 전반적으로 파악하기에는 �
 컴퓨터 비전 분야에서 물체 검출 및 이미지 분류 모델의 성능은 대부분 AP로 평가한다. 물체 클래스가 여러 개인 경우 각 클래스 당 AP를 구한 다음에 그것을 모두 합한 후 물체 클래스 갯수로 나눠줌으로서 모델의 성능을 평가한다. 이것을 mAP (mean Average Precision)라고 한다.
 
 ### 4. NMS  
-일반적으로 input image가 object detection 알고리즘을 통과하면 object에 bbox가 그려지며 어떤 물체일 확률 값을 가지게 된다. 이때 아래 그림처럼 한 가지 object에 많은 bbox가 생긴다. 동일한 object에 여러 개의 bbox가 있다면, 가장 score가 높은 박스만 남기고 나머지를 제거하는 것이 NMS(Non-macimum Suppression)라 한다.  
+일반적으로 input image가 object detection 알고리즘을 통과하면 object에 bbox가 그려지며 어떤 물체일 확률 값을 가지게 된다. 이때 아래 그림처럼 한 가지 object에 많은 bbox가 생긴다. 동일한 object에 여러 개의 bbox가 있다면, 가장 score가 높은 박스만 남기고 나머지를 제거하는 것이 NMS(Non-maximum Suppression)라 한다.  
 ![image](https://user-images.githubusercontent.com/120306359/225559402-c9e4eb5a-8028-443f-9fb6-17620dfaf92a.png)
 
 참고 사이트
 - https://80000coding.oopy.io/b81217c1-69c6-459c-a268-4b357afda3bb#5f7c380f-1533-454d-9e67-d1e86a3f828b 
 - https://bigdaheta.tistory.com/53
+- https://ctkim.tistory.com/98 
