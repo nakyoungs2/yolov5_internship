@@ -63,7 +63,7 @@ PR 곡선에서 x축은 Recall 값이고, y축은 Precision 값이다. 즉, PR �
 PR 그래프는 어떤 모델의 성능을 전반적으로 파악하기에는 좋으나 서로 다른 두 모델의 성능을 정량적으로 비교하기에는 불편한 점이 있다. 그래서 나온 개념이 AP이다. AP는 인식 알고리즘의 성능을 하나의 값으로 표현한 것으로서 PR 그래프에서 그래프 선 아래쪽의 면적으로 계산된다. AP가 높으면 높을수록 그 모델의 성능이 전체적으로 우수하다는 의미이다.  
 컴퓨터 비전 분야에서 물체 검출 및 이미지 분류 모델의 성능은 대부분 AP로 평가한다. 물체 클래스가 여러 개인 경우 각 클래스 당 AP를 구한 다음에 그것을 모두 합한 후 물체 클래스 갯수로 나눠줌으로서 모델의 성능을 평가한다. 이것을 mAP (mean Average Precision)라고 한다.
 
-4. NMS  
+### 4. NMS  
 일반적으로 input image가 object detection 알고리즘을 통과하면 object에 bbox가 그려지며 어떤 물체일 확률 값을 가지게 된다. 이때 아래 그림처럼 한 가지 object에 많은 bbox가 생긴다. 동일한 object에 여러 개의 bbox가 있다면, 가장 score가 높은 박스만 남기고 나머지를 제거하는 것이 NMS(Non-macimum Suppression)라 한다.  
 ![image](https://user-images.githubusercontent.com/120306359/225559402-c9e4eb5a-8028-443f-9fb6-17620dfaf92a.png)
 
